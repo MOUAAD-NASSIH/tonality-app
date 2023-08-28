@@ -21,7 +21,7 @@ const links = [
 </script>
 
 <template>
-  <header class="sticky top-0 shadow shadow-indigo-50">
+  <header class="sticky top-0 shadow shadow-indigo-50 bg-white z-20">
     <nav class="container flex justify-between items-center">
       <div class="flex items-center gap-32">
         <a href="#" class="text-2xl font-bold">Tonality</a>
@@ -63,7 +63,9 @@ const links = [
           pure sound.
         </p>
         <div class="flex items-center gap-2 text-white">
-          <button
+          <a
+            href="https://play.google.com/store/apps"
+            type="button"
             class="flex justify-between items-center bg-blue-500 px-3 py-1 rounded-xl gap-3"
           >
             <svg
@@ -76,11 +78,13 @@ const links = [
               />
             </svg>
             <span class="flex flex-col items-start font-semibold text-left">
-              <span class="text-[10px]">GET IT ON </span>
+              <span class="text-[10px] h-[15px]">GET IT ON </span>
               <span>GOOGLE PLAY</span>
             </span>
-          </button>
-          <button
+          </a>
+          <a
+            href="https://www.apple.com/app-store/"
+            type="button"
             class="flex justify-between items-center bg-blue-500 px-2 py-1 rounded-xl gap-2"
           >
             <svg
@@ -93,10 +97,10 @@ const links = [
               />
             </svg>
             <span class="flex flex-col items-start font-semibold text-left">
-              <span class="text-[10px]">GET IT ON </span>
+              <span class="text-[10px] h-[15px]">GET IT ON </span>
               <span>APPLE STORE</span>
             </span>
-          </button>
+          </a>
         </div>
       </div>
 
