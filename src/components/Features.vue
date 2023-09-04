@@ -63,7 +63,7 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
           </div>
           <div class="flex items-center gap-5">
             <div
-              class="w-12 h-12 bg-blue-100  rounded-full flex justify-center items-center"
+              class="w-12 h-12 bg-blue-100 rounded-full flex justify-center items-center"
             >
               <svg
                 class="w-8 h-8 text-blue-500 fill-current"

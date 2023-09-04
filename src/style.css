@@ -3,13 +3,40 @@
 @tailwind utilities;
 
 * {
-    font-family:'Roboto', 'Helvetica', 'Roboto', 'Arial', 'sans-serif';
+  font-family: "Roboto", "Helvetica", "Roboto", "Arial", "sans-serif";
+  @apply scroll-smooth;
 }
 
-html, body {
-    @apply font-sans text-indigo-950 text-base
+html,
+body {
+  @apply font-sans text-indigo-950 text-base;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold;
+}
+
+/* scroll bar styles */
+/* Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
