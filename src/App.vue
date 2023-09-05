@@ -3,6 +3,7 @@ import Hero from "./components/Hero.vue";
 import Content from "./components/Content.vue";
 import Features from "./components/Features.vue";
 import Testimonials from "./components/Testimonials.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -10,4 +11,5 @@ import Testimonials from "./components/Testimonials.vue";
   <Content />
   <Features />
   <Testimonials />
+  <Footer />
 </template>

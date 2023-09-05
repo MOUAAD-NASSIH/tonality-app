@@ -68,7 +68,9 @@ const reviews = [
         <h3 class="text-5xl">What people say</h3>
       </div>
 
-      <div class="flex gap-10 overflow-x-auto snap-x snap-mandatory">
+      <div
+        class="flex gap-10 mx-7 md:mx-0 overflow-x-auto snap-x snap-mandatory"
+      >
         <div
           data-aos="fade-up"
           :data-aos-delay="index * 100"
@@ -94,7 +96,7 @@ const reviews = [
               v-for="i in 4"
               :key="i"
               data-aos="fade-up"
-              :data-aos-delay="i*50"
+              :data-aos-delay="i * 50"
               data-aos-duration="600"
             />
             <HalfStar
