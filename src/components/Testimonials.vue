@@ -1,5 +1,5 @@
 <script setup>
-import Star from "../components/icones/star.vue";
+import CompletedStar from "../components/icones/CompletedStar.vue";
 import HalfStar from "../components/icones/HalfStar.vue";
 
 const reviews = [
@@ -92,7 +92,7 @@ const reviews = [
           </p>
 
           <div class="pt-[22px] flex gap-2">
-            <Star
+            <CompletedStar
               v-for="i in 4"
               :key="i"
               data-aos="fade-up"
