@@ -55,7 +55,12 @@ const links = [
 
   <section class="relative">
     <div class="container grid grid-cols-2">
-      <div class="py-20 space-y-10">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        class="py-20 space-y-10"
+      >
         <h1 class="text-6xl font-semibold">
           You bring the passion. <br />
           We bring the music.
@@ -71,7 +76,12 @@ const links = [
         </div>
       </div>
 
-      <div class="absolute w-1/2 h-full top-0 right-0 grid grid-cols-12 gap-5">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        class="absolute w-1/2 h-full top-0 right-0 grid grid-cols-12 gap-5"
+      >
         <div class="h-[152px] bg-gray-400/20 col-start-1 col-end-3"></div>
         <div class="h-[152px] bg-gray-400/20 col-start-3 col-end-9"></div>
         <div class="h-[152px] bg-gray-400/20 col-start-9 col-end-13"></div>

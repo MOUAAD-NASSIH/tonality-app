@@ -6,7 +6,12 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
 <template>
   <section class="py-20">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-20">
-      <div class="flex justify-center md:justify-end">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        class="flex justify-center md:justify-end"
+      >
         <div
           class="w-[500px] h-[700px] rounded-3xl bg-pink-300"
           style="
@@ -15,7 +20,12 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
         ></div>
       </div>
 
-      <div class="max-w-[600px] py-10 space-y-7">
+      <div
+        data-aos="fade-left"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        class="max-w-[600px] py-10 space-y-7"
+      >
         <div class="flex justify-start items-center text-green-500 gap-4">
           <hr class="w-10 border-[1px] border-green-400" />
           <p class="text-lg">More than a streaming service</p>

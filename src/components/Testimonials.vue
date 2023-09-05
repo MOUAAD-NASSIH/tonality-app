@@ -70,6 +70,9 @@ const reviews = [
 
       <div class="flex gap-10 overflow-x-auto snap-x snap-mandatory">
         <div
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+          data-aos-duration="600"
           v-for="(review, index) in reviews"
           :key="index"
           class="min-w-[280px] md:min-w-[300px] lg:min-w-[320px] flex flex-col items-center space-y-1 bg-white p-8 rounded-xl shadow-xl snap-center"
@@ -87,8 +90,18 @@ const reviews = [
           </p>
 
           <div class="pt-[22px] flex gap-2">
-            <Star v-for="i in 4" :key="i" />
-            <HalfStar />
+            <Star
+              v-for="i in 4"
+              :key="i"
+              data-aos="fade-up"
+              :data-aos-delay="i*50"
+              data-aos-duration="600"
+            />
+            <HalfStar
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="600"
+            />
           </div>
         </div>
       </div>
