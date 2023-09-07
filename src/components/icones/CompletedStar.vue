@@ -2,7 +2,7 @@
 
 <template>
   <svg
-    class="w-8 h-8 text-yellow-400 fill-current"
+    class="w-6 sm:w-8 h-6 sm:h-8 text-yellow-400 fill-current"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
   >

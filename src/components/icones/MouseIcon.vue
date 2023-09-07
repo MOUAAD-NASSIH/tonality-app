@@ -1,0 +1,14 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1.5em"
+    height="1.5em"
+    viewBox="0 0 15 15"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M7.5 4v3m0 7.5a5 5 0 0 1-5-5v-4a5 5 0 0 1 10 0v4a5 5 0 0 1-5 5Z"
+    ></path>
+  </svg>
+</template>

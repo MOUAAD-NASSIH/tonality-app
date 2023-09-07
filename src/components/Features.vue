@@ -4,16 +4,18 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
 </script>
 
 <template>
-  <section class="py-20">
-    <div class="container grid grid-cols-1 md:grid-cols-2 gap-20">
+  <section class="py-8 md:py-20">
+    <div
+      class="container grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-20 place-items-center lg:place-items-start"
+    >
       <div
-        data-aos="fade-right"
+        data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="600"
-        class="flex justify-center md:justify-end"
+        class="hidden md:flex justify-center lg:justify-end"
       >
         <div
-          class="w-[500px] h-[700px] rounded-3xl bg-pink-300"
+          class="w-96 h-96 md:w-[500px] md:h-[700px] rounded-3xl bg-pink-300"
           style="
             background-image: url('https://images.unsplash.com/photo-1491927570842-0261e477d937?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=487&q=80');
           "
@@ -21,19 +23,23 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
       </div>
 
       <div
-        data-aos="fade-left"
+        data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="600"
-        class="max-w-[600px] py-10 space-y-7"
+        class="max-w-[600px] py-10 space-y-4 md:space-y-7 mx-5"
       >
-        <div class="flex justify-start items-center text-green-500 gap-4">
-          <hr class="w-10 border-[1px] border-green-400" />
-          <p class="text-lg">More than a streaming service</p>
+        <div
+          class="flex justify-start items-center text-green-500 gap-2 md:gap-4"
+        >
+          <hr class="w-6 md:w-10 border-[1px] border-green-400" />
+          <p class="text-[14px] md:text-lg">More than a streaming service</p>
         </div>
-        <h3 class="text-5xl font-bold">
+        <h3 class="text-3xl md:text-5xl font-bold">
           You bring the passion. We bring the music.
         </h3>
-        <p class="text-2xl font-light opacity-70 text-slate-500 pb-5">
+        <p
+          class="text-base md:text-2xl font-light opacity-70 text-slate-500 pb-3 md:pb-5"
+        >
           Checkout original playlists hand-picked by our team of experts, or
           stream guest playlists created by the artists you love.
         </p>
@@ -41,10 +47,10 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
         <div class="flex flex-col gap-4 opacity-70">
           <div class="flex items-center gap-5">
             <div
-              class="w-12 h-12 bg-blue-100 rounded-full flex justify-center items-center"
+              class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-blue-100 rounded-full flex justify-center items-center"
             >
               <svg
-                class="w-8 h-8 text-blue-500 fill-current"
+                class="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 text-blue-500 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -53,14 +59,14 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
                 />
               </svg>
             </div>
-            <p>High-fidelity sound quality</p>
+            <p class="text-[14px] sm:text-base">High-fidelity sound quality</p>
           </div>
           <div class="flex items-center gap-5">
             <div
-              class="w-12 h-12 bg-blue-100 rounded-full flex justify-center items-center"
+              class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-blue-100 rounded-full flex justify-center items-center"
             >
               <svg
-                class="w-8 h-8 text-blue-500 fill-current"
+                class="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 text-blue-500 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -69,14 +75,14 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
                 />
               </svg>
             </div>
-            <p>Anywhere, any moment</p>
+            <p class="text-[14px] sm:text-base">Anywhere, any moment</p>
           </div>
           <div class="flex items-center gap-5">
             <div
-              class="w-12 h-12 bg-blue-100 rounded-full flex justify-center items-center"
+              class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-blue-100 rounded-full flex justify-center items-center"
             >
               <svg
-                class="w-8 h-8 text-blue-500 fill-current"
+                class="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 text-blue-500 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -85,7 +91,7 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
                 />
               </svg>
             </div>
-            <p>High-fidelity sound quality</p>
+            <p class="text-[14px] sm:text-base">High-fidelity sound quality</p>
           </div>
         </div>
 

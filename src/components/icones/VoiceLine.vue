@@ -2,7 +2,7 @@
 
 <template>
   <svg
-    class="text-blue-500 fill-current"
+    class="w-18 text-blue-500 fill-current"
     xmlns="http://www.w3.org/2000/svg"
     height="3em"
     width="3em"

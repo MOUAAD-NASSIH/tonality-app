@@ -61,15 +61,17 @@ const reviews = [
 </script>
 
 <template>
-  <section class="py-20 bg-gray-400/20">
+  <section class="py-12 md:py-20 bg-gray-400/20">
     <div class="container">
-      <div class="text-center space-y-3 pb-10">
-        <p class="text-thin">Join tens of thousands music lovers</p>
-        <h3 class="text-5xl">What people say</h3>
+      <div class="text-center space-y-3 pb-6 md:pb-10">
+        <p class="text-[14px] md:text-base text-thin">
+          Join tens of thousands music lovers
+        </p>
+        <h3 class="text-3xl md:text-5xl">What people say</h3>
       </div>
 
       <div
-        class="flex gap-10 mx-7 md:mx-0 overflow-x-auto snap-x snap-mandatory"
+        class="flex gap-5 md:gap-10 mx-7 md:mx-0 overflow-x-auto snap-x snap-mandatory"
       >
         <div
           data-aos="fade-up"
@@ -77,21 +79,23 @@ const reviews = [
           data-aos-duration="600"
           v-for="(review, index) in reviews"
           :key="index"
-          class="min-w-[280px] md:min-w-[300px] lg:min-w-[320px] flex flex-col items-center space-y-1 bg-white p-8 rounded-xl shadow-xl snap-center"
+          class="min-w-[280px] md:min-w-[300px] lg:min-w-[320px] flex flex-col items-center space-y-1 bg-white p-4 md:p-8 rounded-lg md:rounded-xl shadow-xl snap-center"
         >
           <img
             :src="review.img"
             alt=""
-            class="w-[74px] h-[74px] rounded-full"
+            class="w-[64px] md:w-[74px] h-[64px] md:h-[74px] rounded-full"
           />
-          <p class="text-xl font-semibold">{{ review.name }}</p>
+          <p class="text-lg md:text-xl font-semibold">{{ review.name }}</p>
           <p class="text-sm text-gray-500 pb-5">{{ review.occupation }}</p>
-          <p class="font-bold">{{ review.reviewTitle }}</p>
-          <p class="text-gray-600 text-center">
+          <p class="text-[14px] md:text-base font-bold">
+            {{ review.reviewTitle }}
+          </p>
+          <p class="text-[14px] md:text-base text-gray-600 text-center">
             {{ review.reviewDescription }}
           </p>
 
-          <div class="pt-[22px] flex gap-2">
+          <div class="pt-[10px] md:pt-[22px] flex gap-2">
             <CompletedStar
               v-for="i in 4"
               :key="i"

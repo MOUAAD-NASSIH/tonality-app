@@ -21,16 +21,22 @@ const content = ref([
 </script>
 
 <template>
-  <section class="py-20">
-    <div class="container rounded-2xl bg-gray-400/20 py-10 space-y-7 px-20">
-      <h2 class="text-4xl text-center my-10">More than a streaming service</h2>
+  <section class="py-12 md:py-20">
+    <div
+      class="container rounded-md md:rounded-2xl bg-gray-400/20 py-10 space-y-7 px-8 lg:px-20"
+    >
+      <h2 class="text-2xl md:text-4xl text-center my-3 sm:my-5 md:my-10">
+        More than a streaming service
+      </h2>
 
-      <div class="flex justify-between items-start gap-10">
+      <div
+        class="flex flex-col-reverse md:flex-row justify-between items-start gap-4 md:gap-6 lg:gap-10"
+      >
         <div
-          data-aos="fade-right"
+          data-aos="zoom-in"
           data-aos-delay="100"
           data-aos-duration="600"
-          class="flex-1 gap-y-16 flex flex-col pt-36"
+          class="flex-1 gap-y-16 flex flex-col md:pt-36"
         >
           <div
             v-for="({ title, description }, index) in content"
@@ -49,10 +55,10 @@ const content = ref([
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="zoom-in"
           data-aos-delay="100"
           data-aos-duration="600"
-          class="flex-1 flex flex-col py-10"
+          class="flex-1 flex flex-col py-10 w-full"
         >
           <div
             style="
