@@ -9,7 +9,7 @@
 
 html,
 body {
-  @apply font-sans text-indigo-950 text-base;
+  @apply font-sans text-indigo-950 text-base dark:text-gray-50 dark:bg-gray-900;
 }
 
 h1,

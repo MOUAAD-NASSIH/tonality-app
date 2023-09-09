@@ -39,7 +39,7 @@ const links = [
           <VoiceLine />
           <div class="flex items-center gap-4">
             <a
-              class="text-blue-900 text-[12px] sm:text-[14px] md:text-[16px] underline hover:text-blue-950 transition-colors duration-300"
+              class="text-blue-900 dark:text-gray-300 text-[12px] sm:text-[14px] md:text-[16px] underline hover:text-blue-950 dark:hover:text-gray-600 transition-colors duration-300"
               v-for="(link, index) in links"
               :key="index"
               :href="link.url"

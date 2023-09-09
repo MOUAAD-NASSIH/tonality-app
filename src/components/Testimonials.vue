@@ -79,7 +79,7 @@ const reviews = [
           data-aos-duration="600"
           v-for="(review, index) in reviews"
           :key="index"
-          class="min-w-[280px] md:min-w-[300px] lg:min-w-[320px] flex flex-col items-center space-y-1 bg-white p-4 md:p-8 rounded-lg md:rounded-xl shadow-xl snap-center"
+          class="min-w-[280px] md:min-w-[300px] lg:min-w-[320px] flex flex-col items-center space-y-1 bg-white dark:bg-gray-900 p-4 md:p-8 rounded-lg md:rounded-xl shadow-xl snap-center"
         >
           <img
             :src="review.img"
@@ -87,11 +87,15 @@ const reviews = [
             class="w-[64px] md:w-[74px] h-[64px] md:h-[74px] rounded-full"
           />
           <p class="text-lg md:text-xl font-semibold">{{ review.name }}</p>
-          <p class="text-sm text-gray-500 pb-5">{{ review.occupation }}</p>
+          <p class="text-sm text-gray-500 dark:text-gray-300 pb-5">
+            {{ review.occupation }}
+          </p>
           <p class="text-[14px] md:text-base font-bold">
             {{ review.reviewTitle }}
           </p>
-          <p class="text-[14px] md:text-base text-gray-600 text-center">
+          <p
+            class="text-[14px] md:text-base text-gray-600 dark:text-gray-400 text-center"
+          >
             {{ review.reviewDescription }}
           </p>
 

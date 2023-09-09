@@ -45,7 +45,11 @@ const content = ref([
           >
             <p
               class="w-10 h-10 bg-slate-200 font-semibold rounded-full flex justify-center items-center"
-              :class="index == 0 ? '!bg-blue-500 text-white' : 'bg-slate-200'"
+              :class="
+                index == 0
+                  ? '!bg-blue-500 text-white'
+                  : 'bg-slate-200 dark:bg-slate-500'
+              "
             >
               {{ index + 1 }}
             </p>
@@ -70,7 +74,7 @@ const content = ref([
               class="absolute top-10 -right-10 bg-white flex justify-between items-center rounded-lg overflow-hidden"
             >
               <div class="px-7">
-                <p class="font-semibold">Morning Playlist</p>
+                <p class="font-semibold dark:text-gray-900">Morning Playlist</p>
                 <p class="font-thin text-gray-500 text-sm">
                   The best songs ever.
                 </p>

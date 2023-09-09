@@ -38,7 +38,7 @@ import GooglePlayButton from "./buttons/GooglePlayButton.vue";
           You bring the passion. We bring the music.
         </h3>
         <p
-          class="text-base md:text-2xl font-light opacity-70 text-slate-500 pb-3 md:pb-5"
+          class="text-base md:text-2xl font-light opacity-70 text-slate-500 dark:text-slate-300 pb-3 md:pb-5"
         >
           Checkout original playlists hand-picked by our team of experts, or
           stream guest playlists created by the artists you love.

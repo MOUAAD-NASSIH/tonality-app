@@ -2,6 +2,11 @@
 import GooglePlayButton from "./buttons/GooglePlayButton.vue";
 import AppStoreButton from "./buttons/AppStoreButton.vue";
 import MouseIcon from "./icones/MouseIcon.vue";
+import LightDarkMode from "./icones/LightDarkMode.vue";
+
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 
 const links = [
   {
@@ -25,7 +30,9 @@ const links = [
 </script>
 
 <template>
-  <header class="sticky top-0 shadow shadow-indigo-50 bg-white z-20">
+  <header
+    class="sticky top-0 shadow shadow-indigo-50 bg-white z-20 dark:bg-slate-700 dark:shadow-slate-800"
+  >
     <nav class="container flex justify-between items-center">
       <div class="flex items-center gap-32">
         <a href="#" class="text-lg md:text-2xl px-4 py-2 font-bold">Tonality</a>
@@ -34,26 +41,32 @@ const links = [
             v-for="(link, index) in links"
             :key="index"
             :href="link.url"
-            class="px-4 py-4 hover:text-indigo-900 font-semibold"
-            :class="{ 'text-indigo-900 font-bold': link.active }"
+            class="px-4 py-4 hover:text-indigo-900 dark:hover:text-gray-400 font-semibold transition-colors duration-300"
+            :class="{
+              'text-indigo-900 font-bold dark:text-gray-400': link.active,
+            }"
           >
             {{ link.name }}
           </a>
         </div>
       </div>
-      <a
-        href="#"
-        class="flex items-center text-indigo-900 font-bold px-4 md:px-5 lg:px-7 py-2 md:py-4"
-      >
-        <span class="text-[14px] md:text-base">Get Started</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-6 md:w-10 fill-current"
+
+      <div class="flex items-center">
+        <LightDarkMode class="cursor-pointer" @click="toggleDark()" />
+        <a
+          href="#"
+          class="flex items-center text-indigo-900 dark:text-white font-bold px-4 md:px-5 lg:px-7 py-2 md:py-4"
         >
-          <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
-        </svg>
-      </a>
+          <span class="text-[14px] md:text-base">Get Started</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-6 md:w-10 fill-current"
+          >
+            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+          </svg>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -69,7 +82,9 @@ const links = [
           You bring the passion. <br />
           We bring the music.
         </h1>
-        <p class="text-base md:text-xl text-center sm:text-left text-gray-800">
+        <p
+          class="text-base md:text-xl text-center sm:text-left text-gray-800 dark:text-gray-200"
+        >
           With our lossless audio experience and high-fidelity sound quality,
           stream music like you've never heard it before. No compromises. Just
           pure sound.
@@ -104,7 +119,7 @@ const links = [
         data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="600"
-        class="absolute -bottom-10 max-lg:left-[calc(50%-115px/2)] max-lg:transform max-lg:-translate-x-1/2 lg:left-44 h-10 w-fit flex items-center gap-2 text-base font-thin md:text-lg md:font-base text-black"
+        class="absolute -bottom-10 max-lg:left-[calc(50%-115px/2)] max-lg:transform max-lg:-translate-x-1/2 lg:left-44 h-10 w-fit flex items-center gap-2 text-base font-thin md:text-lg md:font-base text-indigo-900 dark:text-gray-50"
       >
         <MouseIcon class="animate-bounce" />
         <span>Scroll Down</span>
